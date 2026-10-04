@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Muslim Qur'an & Hadith AI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      ☪️ Muslim AI
+    </div>
+
+    <div class="subtitle">
+      Qur'an • Hadith • Islamic Knowledge
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <section class="hero">
+
+      <h1>Muslim Qur'an & Hadith AI</h1>
+
+      <p>
+        ቁርኣን፣ ሀዲስ እና የእስልምና ጥያቄዎችን
+        በAI ይጠይቁ።
+      </p>
+
+      <div class="language-buttons">
+
+        <button onclick="setLanguage('am')">
+          🇪🇹 አማርኛ
+        </button>
+
+        <button onclick="setLanguage('om')">
+          🇪🇹 Afaan Oromoo
+        </button>
+
+        <button onclick="setLanguage('ar')">
+          🇸🇦 العربية
+        </button>
+
+        <button onclick="setLanguage('en')">
+          🇬🇧 English
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <section class="chat-box">
+
+      <div id="messages" class="messages">
+
+        <div class="message ai">
+
+          <div class="avatar">
+            ☪️
+          </div>
+
+          <div class="bubble">
+
+            <strong>Muslim AI</strong>
+
+            <p>
+              السلام عليكم ورحمة الله وبركاته
+            </p>
+
+            <p>
+              እንኳን ወደ Muslim Qur'an & Hadith AI በደህና መጡ።
+              የቁርኣን፣ የሀዲስ እና የእስልምና ጥያቄዎን ይጠይቁኝ።
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="typing" id="typing">
+        Muslim AI እያዘጋጀ ነው...
+      </div>
+
+
+      <div class="input-area">
+
+        <textarea
+          id="userInput"
+          placeholder="የቁርኣን ወይም የሀዲስ ጥያቄዎን ይጻፉ..."
+          rows="2"
+        ></textarea>
+
+        <button
+          id="sendButton"
+          onclick="sendMessage()"
+        >
+          ➤
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <section class="quick">
+
+      <button onclick="askQuestion('ሱረቱል ፋቲሓን በአማርኛ ከተፍሲር ጋር አብራራልኝ')">
+        📖 ቁርኣን
+      </button>
+
+      <button onclick="askQuestion('ሰሂህ ሀዲስ ምንድነው? ምሳሌዎችንም ስጠኝ')">
+        📚 ሀዲስ
+      </button>
+
+      <button onclick="askQuestion('ስለ ሶላት በቁርኣንና በሰሂህ ሀዲስ አብራራልኝ')">
+        🕌 ሶላት
+      </button>
+
+      <button onclick="askQuestion('የረመዳን ጾም የሚመለከቱ ዋና ህጎችን ከማጣቀሻ ጋር ንገረኝ')">
+        🌙 ረመዳን
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      Muslim Qur'an & Hadith AI
+    </p>
+
+    <small>
+      የሚሰጠው መረጃ ለትምህርት ነው።
+      ለፈትዋ የታመነ የእውቀት ሰውን ያማክሩ።
+    </small>
+
+  </footer>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
